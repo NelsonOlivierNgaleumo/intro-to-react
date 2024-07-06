@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { PropTypes } from 'prop-types';
-import { Button } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 
 export default function Counter({ title }) {
   const [value, setValue] = useState(0);
@@ -17,20 +16,20 @@ export default function Counter({ title }) {
         <>
           <h1>{title}</h1>
           <h2>{value}</h2>
-          <Button type="button" className={value <= 0 ? 'btn btn-danger' : 'btn btn-success'} onClick={handleClick}>
+          <button type="button" className={value <= 0 ? 'btn btn-danger' : 'btn btn-success'} onClick={handleClick}>
             Increment
-          </Button>
+          </button>
           {value <= 0 ? (
             ''
           ) : (
-            <Button type="button" onClick={() => setValue((prevState) => prevState - 1)}>
+            <button type="button" onClick={() => setValue((prevState) => prevState - 1)}>
               Decrement
-            </Button>
+            </button>
           )}
 
-          <Button type="button" onClick={() => setValue(0)}>
+          <button type="button" onClick={() => setValue(0)}>
             Reset
-          </Button>
+          </button>
         </>
       )}
     </div>

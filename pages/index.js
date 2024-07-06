@@ -1,7 +1,7 @@
 import Counter from '../components/Counter1';
 
 function Home() {
-  const counters = [{ title: 'Counter 1' }, { title: 'Counter 2' }, { title: 'Counter 3' }];
+  const counters = [{ title: 'Counter Nelson' }, { title: 'Counter Olivier' }, { title: 'Counter Nelco' }];
 
   return (
     <>
